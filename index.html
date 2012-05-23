@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
-		<title>示範 App</title>
+		<title>FTV demo App</title>
 		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
 		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
@@ -14,37 +14,37 @@
 		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
- 		<div id="title_bar">Phone<strong>Gap</strong> 示範 APP</div>
+ 		<div id="title_bar">Phone<strong>Gap</strong>FTV demo APP</div>
 		<div id="welcome" class="view">
-		  <div class="app_button" id="map_button">顯示現在地點</div>
-  	  <div class="app_button" id="settings_button">設定</div>
+		  <div class="app_button" id="map_button">Here we are</div>
+  	  <div class="app_button" id="settings_button">Setting</div>
 		</div>
 		<div id="map" class="view">
 		  <div class="map_image">
 				<img id="static_map" src="assets/img/staticmap.png">
 		  </div>
-		  <p>現在您在這裡</p>
-		  <div class="app_button" id="welcome_button">回上一頁</div>
+		  <p>Here we are</p>
+		  <div class="app_button" id="welcome_button">Back</div>
 		</div>
 
 		<div id="settings" class="view">
 		  <form id="settings_form">
 		    <fieldset>
-		      <legend>地圖型態</legend>
-			  <input type="radio" name="map" value="roadmap" checked>街道地圖<br/>
-		      <input type="radio" name="map" value="satellite">衛星地圖<br/>
-		      <input type="radio" name="map" value="terrain">地形地圖<br/>
-		      <input type="radio" name="map" value="hybrid">綜合地圖<br/>
+		      <legend>Map Type</legend>
+			  <input type="radio" name="map" value="roadmap" checked>Street<br/>
+		      <input type="radio" name="map" value="satellite">Satellite<br/>
+		      <input type="radio" name="map" value="terrain">Terrain<br/>
+		      <input type="radio" name="map" value="hybrid">Hybrid<br/>
 		    </fieldset>
 		    <fieldset>
-		      <legend>顯示比例</legend>
-  		      <input type="radio" name="zoom" value="7">全台灣<br/>
-  		      <input type="radio" name="zoom" value="11">縣市級<br/>
-  		      <input type="radio" name="zoom" value="14" checked>行政區<br/>
-  		      <input type="radio" name="zoom" value="17">街道級<br/>
-  		      <input type="radio" name="zoom" value="20">巷弄級<br/>
+		      <legend>Zoom Size</legend>
+  		      <input type="radio" name="zoom" value="7">Whole Taiwan<br/>
+  		      <input type="radio" name="zoom" value="11">City<br/>
+  		      <input type="radio" name="zoom" value="14" checked>District<br/>
+  		      <input type="radio" name="zoom" value="17">Street<br/>
+  		      <input type="radio" name="zoom" value="20">Lane<br/>
   		     </fieldset>
-		      <button id="save_button">儲存</button>
+		      <button id="save_button">Save</button>
 	      </form>
 		</div>
 	</body>
