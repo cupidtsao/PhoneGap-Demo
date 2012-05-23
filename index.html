@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+		<title>示範 App</title>
+		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
+		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/lawnchair/adaptors/DOMStorageAdaptor.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/lawnchair/adaptors/WebkitSQLiteAdaptor.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/lawnchair/Lawnchair.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/dsl.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+ 		<div id="title_bar">Phone<strong>Gap</strong> 示範 APP</div>
+		<div id="welcome" class="view">
+		  <div class="app_button" id="map_button">顯示現在地點</div>
+  	  <div class="app_button" id="settings_button">設定</div>
+		</div>
+		<div id="map" class="view">
+		  <div class="map_image">
+				<img id="static_map" src="assets/img/staticmap.png">
+		  </div>
+		  <p>現在您在這裡</p>
+		  <div class="app_button" id="welcome_button">回上一頁</div>
+		</div>
+
+		<div id="settings" class="view">
+		  <form id="settings_form">
+		    <fieldset>
+		      <legend>地圖型態</legend>
+			  <input type="radio" name="map" value="roadmap" checked>街道地圖<br/>
+		      <input type="radio" name="map" value="satellite">衛星地圖<br/>
+		      <input type="radio" name="map" value="terrain">地形地圖<br/>
+		      <input type="radio" name="map" value="hybrid">綜合地圖<br/>
+		    </fieldset>
+		    <fieldset>
+		      <legend>顯示比例</legend>
+  		      <input type="radio" name="zoom" value="7">全台灣<br/>
+  		      <input type="radio" name="zoom" value="11">縣市級<br/>
+  		      <input type="radio" name="zoom" value="14" checked>行政區<br/>
+  		      <input type="radio" name="zoom" value="17">街道級<br/>
+  		      <input type="radio" name="zoom" value="20">巷弄級<br/>
+  		     </fieldset>
+		      <button id="save_button">儲存</button>
+	      </form>
+		</div>
+	</body>
+</html>
